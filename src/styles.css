@@ -1,0 +1,79 @@
+/*.card {
+  background-image: url("../images/cielo.jpg");
+  opacity: 0.5;
+}*/
+.cities {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 22px;
+  list-style: none;
+  vertical-align: middle;
+}
+.main-city {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  list-style: none;
+}
+li.main-city {
+  font-size: 50px;
+  font-weight: 400px;
+}
+
+i {
+  font-size: 50px;
+}
+img {
+  height: 115px;
+}
+.card {
+  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+}
+
+.card-title {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+.main-weather {
+  height: 170px;
+  width: 170px;
+  display: block;
+  /* margin: 0 auto; */
+}
+.card-text {
+  text-align: center;
+}
+
+.card-img-1 {
+  height: 60px;
+  width: 60px;
+  margin: 0 auto 20px;
+  display: block;
+}
+.max {
+  font-size: 20px;
+}
+
+.min {
+  font-size: 15px;
+  color: rgb(99, 96, 96);
+}
+
+.max-main {
+  font-size: 60px;
+}
+
+.min-main {
+  font-size: 30px;
+  color: rgb(99, 96, 96);
+}
+
+a.celsius,
+a.fahrenheit,
+.slash {
+  font-size: 20px;
+  text-decoration: none;
+  vertical-align: top;
+}
+
+.card-border {
+  width: 50px;
+}
