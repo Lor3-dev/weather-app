@@ -73,9 +73,9 @@ function forecastTemp(response) {
 function search(city) {
   let apiKey = "cf76ec6bfd9d3c2ea4f7240c87482c39";
   let units = "metric";
-  let urlCity = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+  let urlCity = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
   axios.get(urlCity).then(showTemp);
-  let forecastUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=${units}`;
+  let forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=${units}`;
   axios.get(forecastUrl).then(forecastTemp);
 }
 
@@ -290,9 +290,9 @@ function showPosition(position) {
   let lat = position.coords.latitude;
   let lon = position.coords.longitude;
   let units = "metric";
-  let currentUrl = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${units}`;
+  let currentUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${units}`;
   axios.get(currentUrl).then(showTemp);
-  let forecastUrl = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${units}`;
+  let forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${units}`;
   axios.get(forecastUrl).then(forecastTemp);
 }
 
@@ -311,9 +311,9 @@ function weatherMadrid() {
   let apiKey = "cf76ec6bfd9d3c2ea4f7240c87482c39";
   let city = "madrid";
   let units = "metric";
-  let urlCity = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+  let urlCity = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
   axios.get(urlCity).then(showTemp);
-  let forecastUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=${units}`;
+  let forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=${units}`;
   axios.get(forecastUrl).then(forecastTemp);
   let inputCity = document.querySelector("#input-city");
   inputCity.value = "Madrid";
@@ -328,9 +328,9 @@ function weatherParis() {
   let apiKey = "cf76ec6bfd9d3c2ea4f7240c87482c39";
   let city = "paris";
   let units = "metric";
-  let urlCity = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+  let urlCity = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
   axios.get(urlCity).then(showTemp);
-  let forecastUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=${units}`;
+  let forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=${units}`;
   axios.get(forecastUrl).then(forecastTemp);
   let inputCity = document.querySelector("#input-city");
   inputCity.value = "Paris";
@@ -345,7 +345,7 @@ function weatherNewYork() {
   let apiKey = "cf76ec6bfd9d3c2ea4f7240c87482c39";
   let city = "new york";
   let units = "metric";
-  let urlCity = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+  let urlCity = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
   axios.get(urlCity).then(showTemp);
   let forecastUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=${units}`;
   axios.get(forecastUrl).then(forecastTemp);
